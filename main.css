@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*
+PAI > filho {...}
+
+com ">" indicamos que queremos manipular
+apenas o filho(parente mais proximo) no html
+*/
+header .container {
+    display: flex;
+    padding: 16px 0;
+    align-items: center;
+}
+body > header {
+    background-color: rgb(51, 48, 48);
+    color: rgb(179, 179, 179)
+}
+header li {
+   display: inline; 
+}
+header li a {
+    color:aquamarine;
+}
+.container {
+    width: 1366px;
+    margin: 0 auto;
+    padding: 0.5%;
+    
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+.articles {
+    display:flex
+}
+.articles article img {
+    height: 45%;
+}
+.articles {
+    width: 30%;
+    /*no width coloca o resultado de N%*/
+}
+/*
+quando queremos aplicar um estilo em mais de uma
+tag usamos "," para especificar mais uma tag como
+velos a baixo
+*/
+section h2,
+.articles article {
+    margin-bottom: 16px;
+
+}
+section {
+    padding: 16px 0;
+}
+.articles article {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.articles article p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.articles article h3 {
+    font-size: 30px;
+}
+.articles article h3:hover {
+    color:rgb(68, 134, 109);
+}
+.container > h2 {
+    font-size: 40px;
+}
+.sports {
+    background-color:rgba(108, 219, 5, 0.342);
+    padding: 16px;
+}
+.economia {
+    background-color:rgba(5, 219, 173, 0.342);
+    padding: 16px;
+}
+.articles a {
+    padding: 5px;
+    display:inline-block;
+    text-decoration: None;
+    color: rgba(0, 0, 0, 0.61);
+    
+    font-weight: 900;
+}
+.articles a:hover {
+    color: rgba(255, 255, 255, 0.61);
+    font-size: 20px;
+}
+.sports .articles article > a {
+    background-color:rgb(121, 221, 39);
+}
+.economia .articles article > a {
+    background-color:rgb(65, 104, 104);
+}
+.tecnologia {
+    background-color:rgba(30, 255, 0, 0.342);
+    padding: 16px;
+}
+.tecnologia .articles article > a {
+    background-color:rgb(93, 151, 0);
+}
+.entreterimento {
+    background-color: rgba(216, 212, 0, 0.582);
+}
+.articles article p {
+    max-width: 400px;
+}
